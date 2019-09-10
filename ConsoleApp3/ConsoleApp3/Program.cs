@@ -19,6 +19,19 @@ namespace ConsoleApp3
             {
                 case "sim":
                     Console.WriteLine($"Escolha um livro de seu agrado e procure um bibliotecário.");
+                    Console.WriteLine("Informe o livro a ser Alugado:");
+                    var numeroDoLivro = Console.ReadLine();
+                    if (numeroDoLivro == "123456")
+                    {
+                        Console.WriteLine("Livro Indisponível!!!");
+                        Console.ReadKey();
+                        return;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Livro alugado com sucesso. Boa leitura!!!");
+                        Console.ReadKey();
+                    }
                     break;
                 case "não":
                     Console.WriteLine($"Antes de alugar um livro, você deve realizar um cadastro na biblioteca!");
@@ -28,15 +41,8 @@ namespace ConsoleApp3
                     break;
 
             }
-            Console.WriteLine("Informe o livro a ser consultado:");
-            var numeroDoLivro = Console.ReadLine();
-            if (numeroDoLivro == "123456")
-            {
-               Console.WriteLine("Livro Indisponível!!!");
-               Console.ReadKey();
-               return;
+            Console.ReadKey();
 
-            }
         }
     }
 }
