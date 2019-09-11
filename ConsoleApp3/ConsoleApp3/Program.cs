@@ -33,9 +33,12 @@ namespace ConsoleApp3
                         Console.ReadKey();
                     }
                     break;
+
                 case "não":
                     Console.WriteLine($"Antes de alugar um livro, você deve realizar um cadastro na biblioteca!");
-                    break;
+                    Console.ReadKey();
+                break;
+
                 default:
                     Console.WriteLine("Trouxa, digita certo sa merda!!!");
                     break;
