@@ -28,8 +28,7 @@ namespace IniciandoForech2
                 foreach (var item in conteudoTextoSplit)
 
             {
-                if (palavra == item) ;
-                        
+                if (palavra == item);
             }
 
             Console.ReadKey();
