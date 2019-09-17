@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29306.81
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForeachNaLista", "ForeachNaLista\ForeachNaLista.csproj", "{0B53C177-5AB1-4579-AE31-CA472E522EE2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExercicioConversão", "ExercicioConversão\ExercicioConversão.csproj", "{4E2DDA5E-523D-435D-95A5-6E98ABC97F7B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0B53C177-5AB1-4579-AE31-CA472E522EE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B53C177-5AB1-4579-AE31-CA472E522EE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B53C177-5AB1-4579-AE31-CA472E522EE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B53C177-5AB1-4579-AE31-CA472E522EE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E2DDA5E-523D-435D-95A5-6E98ABC97F7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E2DDA5E-523D-435D-95A5-6E98ABC97F7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E2DDA5E-523D-435D-95A5-6E98ABC97F7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E2DDA5E-523D-435D-95A5-6E98ABC97F7B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0FB16D9C-9D2D-450B-9D42-8C8643BB8366}
+	EndGlobalSection
+EndGlobal
