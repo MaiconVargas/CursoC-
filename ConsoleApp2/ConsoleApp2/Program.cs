@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CALC2000
+namespace CALC3000
 {
     class Program
     {
