@@ -66,9 +66,9 @@ namespace CestoDeFrutas
             Console.WriteLine("\n ---------------------------------------------------------\n");
 
 
-            var mostrandoFindAll = cestaDeFrutas.FindAll(x => x.Cor == "Amarela" || x.Cor == "Vermelho");
+            var mostrandoFindAll = cestaDeFrutas.FindAll(x => x.Cor == "Amarelo" || x.Cor == "Vermelho");
 
-            Console.WriteLine($"{mostrandoFindAll}");
+            mostrandoFindAll.ForEach(i => Console.WriteLine($"As frutas são: {i.Nome}"));
 
 
             Console.ReadLine();

@@ -33,6 +33,9 @@ namespace InterfaceBiblioteca
                     case 4:
                         AdcionarLivro();
                         break;
+                    case 5:
+                        RemoverLivroPeloID();
+                        break;
                     case 0:
                         Console.Clear();
                         Console.WriteLine("Até a proxima..");
@@ -56,13 +59,13 @@ namespace InterfaceBiblioteca
             var nomeDoLivro = Console.ReadLine();
             livrosController.AdcionarLivro(new Livro()
             {
-                 Nome = nomeDoLivro
+                Nome = nomeDoLivro
             });
             Console.WriteLine("Livro cadastrado com sucesso!");
             Console.ReadKey();
 
         }
-        
+
         private static void MostrarUsuarios()
         {
             Console.Clear();
@@ -76,7 +79,6 @@ namespace InterfaceBiblioteca
             Livro livro = new Livro();
             livro.Nome = "Éramos seis";
 
-            // =====================================================
             var unic = new List<Livro>
             {
                 new Livro()
@@ -160,6 +162,7 @@ namespace InterfaceBiblioteca
             Console.WriteLine("2 - Livros");
             Console.WriteLine("3 - Trocar Usuário");
             Console.WriteLine("4 - Cadastro de livros");
+            Console.WriteLine("5 - Remover livros");
             Console.WriteLine("0 - Sair ");
             return int.Parse(Console.ReadKey(true).KeyChar.ToString());
         }
@@ -174,6 +177,23 @@ namespace InterfaceBiblioteca
             Console.WriteLine("SISTEMA DE LOCAÇÃO DE LIVROS");
             Console.WriteLine("================================");
             Console.WriteLine("Para acessar informe seu login e senha!!");
+        }
+        private static void RemoverLivroPeloID()
+        {
+            Console.WriteLine("Remover um livro");
+
+            MostrarLivros();
+
+            Console.WriteLine("Informe o ID para desativar do system");
+            int livroID = int.Parse(Console.ReadLine());
+
+            livrosController.RemoverLivroPorID(livroID);
+
+            Console.WriteLine("Livro removido");
+
+                
+
+
         }
     }
 }
