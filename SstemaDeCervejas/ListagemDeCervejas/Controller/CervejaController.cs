@@ -13,7 +13,13 @@ namespace ListagemDeCervejas.Controller
 
         public List<Cerveja> GetCervejas()
         {
-            return SistemaCervejaContext.ListaCerveja;
+            return SistemaCervejaContext.ListaDeCervejaPublica;
         }
+
+        public void AdicionarCerveja(string nomeCerveja, double teorCerveja, double litroCerveja, double valorCerveja)
+        {
+            SistemaCervejaContext.ListaCerveja.Add(new Cerveja() { ID = 10, Nome = nomeCerveja, Alcool = teorCerveja, Litros = litroCerveja, Valor = valorCerveja });
+        }
+
     }
 }
