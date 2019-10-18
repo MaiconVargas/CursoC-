@@ -35,8 +35,7 @@ namespace CatalogoCelulares.Controller
 
         public bool InserirCelular(Celular item)
         {
-            if (string.IsNullOrWhiteSpace(item.Marca))
-                return false;
+             
 
             if (string.IsNullOrWhiteSpace(item.Modelo))
                 return false;

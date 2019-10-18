@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A003B1DE-CB9D-46CA-A929-205D474C6DC1}</ProjectGuid>
+    <ProjectGuid>{E5600227-E489-4768-81DA-4C5B368BB543}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>LocacaoBiblioteca</RootNamespace>
@@ -32,6 +32,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -44,6 +45,7 @@
     <Compile Include="Controller\LivrosController.cs" />
     <Compile Include="Controller\UsuarioController.cs" />
     <Compile Include="Model\Livro.cs" />
+    <Compile Include="Model\LocacaoContext.cs" />
     <Compile Include="Model\Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
